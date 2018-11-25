@@ -330,4 +330,4 @@ print("Time = " + str(sdp_pol.time))
 
 rlq_Qlearn = solve_rl_Qlearn()
 print_policy(rlq_Qlearn.policy)
-
+print(rlq_Qlearn.Q)
