@@ -288,6 +288,7 @@ def solve_mdp_policy():
 def solve_rl_Qlearn():
     """Solve the problem as a reinforcement learning (Q-learning) algorithm.
     """
+    np.random.seed(1)
     P, R = get_transition_and_reward_arrays(0.5)
     rlq = mdp.QLearning(P, R, 0.96, n_iter = 10000)
     rlq.run()
